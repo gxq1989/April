@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_show"
+        android:enabled="true"
+        android:orderInCategory="0"
+        android:showAsAction="always"
+        android:title="@string/today"
+       >
+    </item>
+    <item
+        android:id="@+id/item_add"
+        android:icon="@drawable/addbtn"
+        android:orderInCategory="1"
+        android:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/item_refresh"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/refresh"/>
+    
+     <item
+        android:id="@+id/item_exit"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/exit"/>
+
+</menu>

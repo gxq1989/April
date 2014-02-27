@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <!-- android:background="@drawable/item_back" -->
+
+    <CheckBox
+        android:id="@+id/checkbox_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:paddingRight="15dp"
+        android:layout_toRightOf="@+id/checkbox_state"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_list_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkbox_state"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/tv_list_alerttime"
+        android:text="中"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/checkbox_state"
+        android:src="@drawable/alarm" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_list_alerttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_list_priority"
+        android:layout_alignBottom="@+id/tv_list_priority"
+        android:layout_alignLeft="@+id/tv_list_title"
+        android:text="2013.08.17 11:58" />
+
+</RelativeLayout>

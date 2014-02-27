@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Well Done</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="today">今天</string>
+    <string name="tommorrow">明天</string>
+    <string name="later">以后</string>
+    <string name="unfinished">未完成</string>
+    <string name="finished">已完成</string>
+    <string name="refresh">同步</string>
+    <string name="exit">退出</string>
+    <string name="rowid">rowid</string>
+    <string name="remindtime">remindtime</string>
+    <string name="prior">prior</string>
+    <string name="title">title</string>
+    <string name="remindpattern">remindpattern</string>
+    <string name="iscomplete">iscomplete</string>
+    <string name="username">username</string>
+    <string name="userid">userid</string>
+    <string name="serverid">serverid</string>
+    <string name="iscommit">iscommit</string>
+    <string name="deleteflag">deleteflag</string>
+    <string name="isremind">isremind</string>
+
+</resources>

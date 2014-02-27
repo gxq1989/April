@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editscrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editback"
+            tools:context=".MainActivity" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:text="标题"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_title"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tv_title"
+                android:hint="输入待办事项" >
+
+                <requestFocus />
+            </EditText>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/et_title"
+                android:layout_marginTop="20dp"
+                android:background="#c1c1c1" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/view1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:text="任务时间"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Switch
+                android:id="@+id/switch_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_time"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:id="@+id/bt_alertdate"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_title"
+                android:layout_alignRight="@+id/bt_cancel"
+                android:layout_below="@+id/switch_alert"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:text="2013.08.17"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/bt_alerttime"
+                android:layout_marginTop="20dp"
+                android:background="#c1c1c1" />
+
+            <TextView
+                android:id="@+id/tv_prior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/view2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:text="优先级"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/bt_prior"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_prior"
+                android:layout_alignRight="@+id/switch_alert"
+                android:layout_below="@+id/tv_prior"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/longbtn"
+                android:text="低" />
+
+            <Button
+                android:id="@+id/bt_cancel"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/bt_prior"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/bt_prior"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btnback"
+                android:text="取消"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/bt_prior"
+                 android:layout_marginTop="50dp"
+                android:layout_below="@+id/bt_prior"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btnback"
+                android:text="保存"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_alerttime"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/bt_alertdate"
+                android:layout_alignRight="@+id/switch_alert"
+                android:layout_alignTop="@+id/bt_alertdate"
+                android:background="@drawable/longbtn"
+                android:text="11:10" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
