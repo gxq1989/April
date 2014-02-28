@@ -8,14 +8,14 @@
         android:id="@+id/regeoButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="ResGeoCoding(39.9824,116.3053)" >
+        android:text="ResGeoCoding(xxx, xxx)" >
     </Button>
 
     <Button
         android:id="@+id/geoButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="GeoCoding(方恒国际中心)" >
+        android:text="GeoCoding(xxx)" >
     </Button>
 
     <com.amap.api.maps.MapView
