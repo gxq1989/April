@@ -1,0 +1,2 @@
+﻿ 1.Android_Location_V1.0.5.jar架包是AMap定位包，支持Android SDK2.1及以上，Android_Services_2.1.4.jar架包是AMap搜索包，支持Android SDK1.6及以上，Android_Map_2.1.4.jar架包是AMap地图包，支持Android SDK2.2及以上libamapv301.so和libamapv301ex.so文件是AMap地图引擎，支持Android SDK2.2及以上；
+ 2.如果遇到问题，可以上技术支持论坛http://bbs.amap.com/forum.php。
