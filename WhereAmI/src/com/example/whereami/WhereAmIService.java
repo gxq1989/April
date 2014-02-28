@@ -14,6 +14,10 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
 
+/**
+ * @author April
+ * 
+ */
 public class WhereAmIService extends Service implements LocationListener {
 
     private Context mContext;
@@ -40,6 +44,8 @@ public class WhereAmIService extends Service implements LocationListener {
         Utils.log("enter onCreate");
 
         mLocationManager = (LocationManager) getSystemService(Service.LOCATION_SERVICE);
+        
+        // TODO 
         mLocationProvider = LocationManager.NETWORK_PROVIDER;
         mLocationManager.requestLocationUpdates(mLocationProvider, 0, 0, this);
 
@@ -97,6 +103,13 @@ public class WhereAmIService extends Service implements LocationListener {
             if (addresses != null && addresses.size() > 0) {
                 Address address = addresses.get(0);
                 StringBuilder sb = new StringBuilder();
+                /**
+                 * getCountryName() // xxx country
+                 * getAdminArea() // xxx province
+                 * getLocality() // xxx city
+                 * getSubLocality() // xxx area
+                 * getThoroughfare() // xxx street
+                 */
                 // 北京 朝阳区 酒仙桥路
                 sb.append(address.getLocality()).append(address.getSubLocality()).append(address.getThoroughfare());
 
